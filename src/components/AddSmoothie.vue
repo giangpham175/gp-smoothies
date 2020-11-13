@@ -8,6 +8,11 @@
                 <input type="text" name="title" v-model="title">
             </div>
 
+            <div v-for="(ing, i) in ingredients" :key="i">
+                <label for="ingredient">Ingredient:</label>
+                <input type="text" name="ingredient" v-model="ingredients[i]">
+            </div>
+
             <div class="field add-ingredient">
                 <label for="" class="dd-ingredient">Add an ingredient:</label>
                 <input type="text" name="add-ingredient" @keydown.tab.prevent="addIng" v-model="another">
