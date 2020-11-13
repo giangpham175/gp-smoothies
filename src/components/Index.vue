@@ -31,10 +31,6 @@ export default {
 
     methods: {
         deleteSmoothie(id) {
-            // this.smoothies = this.smoothies.filter((smoothie) => {
-            //     return smoothie.id != id
-            // })
-
             // console.log(id);
 
             // delete doc from firestore
